@@ -207,11 +207,26 @@ input {
     color: var(--color-text);
 }
 
+.logo-multiline {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    font-size: var(--font-size-sm);
+}
+
+.logo-line-small {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}
+
 .logo-accent {
     background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-size: var(--font-size-base);
+    font-weight: 800;
 }
 
 .nav-links {
@@ -1113,7 +1128,7 @@ input {
    Footer
    ============================================ */
 .footer {
-    background: var(--color-text);
+    background: #1a1a2e;
     color: white;
     padding: var(--spacing-4xl) 0 var(--spacing-xl);
 }
