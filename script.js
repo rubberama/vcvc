@@ -55,12 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initVideoModal();
     loadYouTubeContent();
     initTypewriter();
-
-    // Fetch channel stats (subscribers, views)
-    fetchChannelStats();
-
-    // Refresh channel stats every 1 hour (3600000 ms)
-    setInterval(fetchChannelStats, 60 * 60 * 1000);
 });
 
 // ============================================
@@ -123,40 +117,6 @@ function initTypewriter() {
     type();
 }
 
-// ============================================
-// Fetch Channel Stats (Subscribers, Views)
-// ============================================
-async function fetchChannelStats() {
-    try {
-        // Try to fetch from API (works on both Vercel and localhost)
-        const response = await fetch('/api/channel-stats');
-
-        if (response.ok) {
-            const stats = await response.json();
-            console.log('Channel stats fetched:', stats);
-            updateChannelStats(
-                FALLBACK_VIDEOS.length,
-                stats.subscribers,
-                stats.totalViews
-            );
-            return;
-        }
-    } catch (error) {
-        console.log('Backend unavailable, using fallback stats');
-    }
-
-    // Fallback to hardcoded values if backend is unavailable
-    const FALLBACK_STATS = {
-        subscribers: 63,
-        totalViews: 520
-    };
-
-    updateChannelStats(
-        FALLBACK_VIDEOS.length,
-        FALLBACK_STATS.subscribers,
-        FALLBACK_STATS.totalViews
-    );
-}
 
 // ============================================
 // YouTube Content Loading
@@ -221,7 +181,6 @@ async function fetchFromRSSFeed() {
 
         if (videos.length > 0) {
             renderContent(videos);
-            updateChannelStats(videos.length);
         } else {
             renderFallbackContent();
         }
@@ -250,12 +209,7 @@ async function fetchFromYouTubeAPI() {
     const channelData = await channelResponse.json();
 
     if (channelData.items && channelData.items[0]) {
-        const stats = channelData.items[0].statistics;
-        updateChannelStats(
-            parseInt(stats.videoCount),
-            parseInt(stats.subscriberCount),
-            parseInt(stats.viewCount)
-        );
+        // Stats handling removed
     }
 
     // Get uploads playlist ID
@@ -337,7 +291,6 @@ function renderContent(videos) {
 function renderFallbackContent() {
     renderFeaturedEpisode(FALLBACK_VIDEOS[0]);
     renderEpisodeGrid(FALLBACK_VIDEOS.slice(1));
-    updateChannelStats(FALLBACK_VIDEOS.length, null, null);
 }
 
 function renderFeaturedEpisode(video) {
@@ -418,18 +371,7 @@ function goToEpisode(videoId) {
     window.location.href = `episode.html?v=${videoId}`;
 }
 
-function updateChannelStats(videoCount, subscriberCount = null, viewCount = null) {
-    const formatNumber = (num) => {
-        if (num === null || num === undefined) return '--';
-        if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
-        if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
-        return num.toString();
-    };
 
-    document.getElementById('video-count').textContent = formatNumber(videoCount);
-    document.getElementById('subscriber-count').textContent = formatNumber(subscriberCount);
-    document.getElementById('view-count').textContent = formatNumber(viewCount);
-}
 
 // ============================================
 // Video Modal
