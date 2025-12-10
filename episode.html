@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Episode | NIA VC</title>
+    <meta name="description" id="meta-description"
+        content="Weekly conversation with Ian, Eric, and Kevin on tech, economy, investing, market, and many more...">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="episode-styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">NIA<span class="logo-accent">VC</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#podcasts" class="nav-link">Episodes</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-trigger">
+                        Host's Fund
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="https://www.hustlefund.vc/" target="_blank" class="dropdown-item">
+                            <span class="dropdown-item-name">Hustle Fund</span>
+                            <span class="dropdown-item-desc">Pre-seed & Seed VC</span>
+                        </a>
+                        <a href="https://www.mangustacap.com/" target="_blank" class="dropdown-item">
+                            <span class="dropdown-item-name">Mangusta Capital</span>
+                            <span class="dropdown-item-desc">Venture Capital</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-actions">
+                <a href="https://www.youtube.com/@notinvestmentadviceVC?sub_confirmation=1" target="_blank"
+                    class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                    Subscribe
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Episode Header -->
+    <header class="episode-header">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Back to Episodes
+            </a>
+            <div class="episode-header-content">
+                <div class="episode-meta-header">
+                    <span class="episode-category-badge" id="episode-category">NIA VC</span>
+                    <span class="episode-date" id="episode-date">Dec 6, 2024</span>
+                </div>
+                <h1 class="episode-title" id="episode-title">Loading...</h1>
+                <p class="episode-hosts">
+                    <span>Hosted by</span>
+                    <strong>Eric, Ian & Kevin</strong>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="episode-main">
+        <div class="container">
+            <div class="episode-layout">
+                <!-- Left Column - Video & Content -->
+                <div class="episode-content">
+                    <!-- Video Player -->
+                    <div class="video-player-container">
+                        <div class="video-player">
+                            <iframe id="youtube-player" src="" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Episode Description -->
+                    <div class="episode-description-section">
+                        <h2>About This Episode</h2>
+                        <p class="episode-description" id="episode-description">
+                            Weekly conversation with Ian, Eric, and Kevin on tech, economy, investing, market, and many
+                            more...
+                        </p>
+                    </div>
+
+                    <!-- Topics Discussed -->
+                    <div class="topics-section">
+                        <h3>In This Episode We Discuss:</h3>
+                        <ul class="topics-list" id="topics-list">
+                            <li>Market trends and investment opportunities</li>
+                            <li>Tech industry insights and analysis</li>
+                            <li>Economic indicators and their impact</li>
+                            <li>Startup ecosystem updates</li>
+                            <li>Venture capital perspectives</li>
+                        </ul>
+                    </div>
+
+                    <!-- Share Section -->
+                    <div class="share-section">
+                        <h4>Share this episode</h4>
+                        <div class="share-buttons">
+                            <button class="share-btn" id="copy-link-btn" title="Copy link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                </svg>
+                                <span>Copy Link</span>
+                            </button>
+                            <a class="share-btn" id="twitter-share" href="#" target="_blank" title="Share on Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                                <span>Twitter</span>
+                            </a>
+                            <a class="share-btn" id="linkedin-share" href="#" target="_blank" title="Share on LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Sidebar -->
+                <aside class="episode-sidebar">
+                    <!-- Listen On -->
+                    <div class="sidebar-card listen-card">
+                        <h4>Listen On</h4>
+                        <div class="listen-platforms">
+                            <a href="https://www.youtube.com/@notinvestmentadviceVC" target="_blank"
+                                class="platform-btn youtube">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="#" target="_blank" class="platform-btn spotify" id="spotify-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+                                </svg>
+                                <span>Spotify</span>
+                            </a>
+                            <a href="#" target="_blank" class="platform-btn apple" id="apple-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M5.34 0A5.328 5.328 0 000 5.34v13.32A5.328 5.328 0 005.34 24h13.32A5.328 5.328 0 0024 18.66V5.34A5.328 5.328 0 0018.66 0H5.34zm6.525 2.568c4.903 0 8.932 3.825 9.239 8.653.036.574-.463.923-.978.923-.465 0-.873-.345-.903-.81-.248-3.97-3.537-7.102-7.591-7.102-4.201 0-7.625 3.426-7.625 7.627 0 2.165.9 4.098 2.337 5.482.197.188.317.452.317.72a.941.941 0 01-.877.954c-.332.038-.614-.13-.803-.318-1.718-1.67-2.778-4.013-2.778-6.598 0-5.028 4.13-9.152 9.162-9.152zm-.015 3.168c3.326 0 6.038 2.622 6.21 5.91.003.052.044.57-.486.827-.287.14-.523.088-.739-.041-.229-.136-.377-.353-.4-.69-.144-2.447-2.194-4.395-4.689-4.395-2.605 0-4.731 2.131-4.731 4.736 0 1.475.653 2.779 1.684 3.672.224.193.348.445.348.732s-.14.576-.377.765c-.229.182-.524.281-.754.114-1.409-1.15-2.291-2.9-2.291-4.81 0-3.447 2.792-6.24 6.225-6.24z" />
+                                </svg>
+                                <span>Apple Podcasts</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Spotify Embed -->
+                    <div class="sidebar-card spotify-embed-card" id="spotify-embed-container" style="display: none;">
+                        <h4>Listen on Spotify</h4>
+                        <div class="spotify-embed">
+                            <iframe id="spotify-embed" style="border-radius:12px" src="" width="100%" height="152"
+                                frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Subscribe CTA -->
+                    <div class="sidebar-card subscribe-card">
+                        <h4>Never miss an episode</h4>
+                        <p>Subscribe on YouTube to get notified when new episodes drop.</p>
+                        <a href="https://www.youtube.com/@notinvestmentadviceVC?sub_confirmation=1" target="_blank"
+                            class="btn btn-yt btn-block">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                            Subscribe on YouTube
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Related Episodes -->
+    <section class="related-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Related Episodes</h2>
+            </div>
+            <div class="related-grid" id="related-episodes">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-text">NIA<span class="logo-accent">VC</span></span>
+                </a>
+                <p class="footer-tagline">Not Investment Advice. Weekly conversations about tech, economy, investing,
+                    and the market.</p>
+                <div class="footer-socials">
+                    <a href="https://www.youtube.com/@notinvestmentadviceVC" target="_blank" class="social-link"
+                        aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="disclaimer">This content is for entertainment purposes only and is not investment advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="episodes-data.js"></script>
+    <script src="episode.js"></script>
+</body>
+
+</html>

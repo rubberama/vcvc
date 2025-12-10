@@ -1,0 +1,31 @@
+{
+  "videoId": "9WNieaqHx7I",
+  "title": "Yann LeCun leaves Meta, Harvey’s $8B valuation, AI music hits #1 & Sequoia’s leadership shakeup",
+  "description": "This episode explores major AI and tech developments including Yann LeCun’s departure from Meta to launch a groundbreaking AI startup, Harvey’s impressive $8 billion valuation in legal AI, and the rise of AI-generated music topping the Billboard charts. The hosts also discuss the evolving landscape of AI personalization, ethical considerations, and shifts in venture capital leadership.",
+  "keyTakeaways": [
+    "Yann LeCun leaves Meta to found a new AI startup focused on next-generation world-model AI outside Silicon Valley.",
+    "Harvey, a legal AI company, achieves a significant $8 billion valuation, highlighting investor confidence in AI-driven legal tools.",
+    "AI-generated music reaches Billboard #1, signaling a major milestone for consumer AI creativity and personalization.",
+    "Discussion on the ethical implications of AI in healthcare, sparked by recent statements from the Pope.",
+    "Competitive dynamics between OpenAI and Anthropic around AI model margins, token costs, and user lock-in strategies.",
+    "Sequoia Capital undergoes a leadership transition amid industry rumors, reflecting shifts in venture capital’s AI focus."
+  ],
+  "topics": [
+    "Yann LeCun’s Meta departure",
+    "AI startup ecosystem",
+    "Harvey legal AI valuation",
+    "AI-generated music trends",
+    "AI ethics in healthcare",
+    "OpenAI vs Anthropic margins",
+    "AI user retention and lock-in",
+    "Sequoia leadership changes"
+  ],
+  "highlights": [
+    "\"Silicon Valley is completely hypnotized by the current models of generative AI. To pursue this kind of new research, you have to go outside the Valley – to Paris.\" – Yann LeCun",
+    "\"AI-generated music hitting Billboard #1 shows the real consumer appetite for personalized AI creativity.\"",
+    "\"Harvey’s $8 billion valuation underscores the growing trust in AI’s role in transforming legal services.\""
+  ],
+  "hasTranscript": false,
+  "generatedAt": "2025-12-10T04:12:51.442Z",
+  "model": "perplexity-llama-3.1-sonar"
+}

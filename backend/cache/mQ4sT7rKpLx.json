@@ -1,0 +1,31 @@
+{
+  "videoId": "mQ4sT7rKpLx",
+  "title": "",
+  "description": "This episode explores expert strategies for creating engaging video podcasts, focusing on optimizing content through SEO, enhancing audio and video quality, and analyzing performance metrics. It offers practical insights on crafting compelling intros, using keywords effectively, and leveraging tools for content improvement.",
+  "keyTakeaways": [
+    "Use relevant keywords strategically in titles, descriptions, and tags to improve search ranking and discoverability.",
+    "Conduct thorough pre-recording script reviews to ensure clarity, coherence, and audience engagement.",
+    "Optimize podcast intros to hook viewers within the first 30 seconds using provocative questions or teasers.",
+    "Analyze podcast performance using tools like Cleanvoice’s Podcast Audit to identify areas for audio and speech improvement.",
+    "Focus on viewer benefits by emphasizing actionable insights and practical takeaways rather than just guest stories.",
+    "Incorporate visually appealing elements and clear call-to-actions to enhance viewer retention and engagement."
+  ],
+  "topics": [
+    "Video podcast SEO optimization",
+    "Pre-recording script review",
+    "Engaging podcast intros",
+    "Performance analysis and feedback",
+    "Audio and video quality enhancement",
+    "Viewer engagement strategies",
+    "Content structuring for retention",
+    "Use of podcast tools and technology"
+  ],
+  "highlights": [
+    "“The first 30 seconds of your video podcast are crucial for capturing your audience's attention.”",
+    "“Using a Podcast Audit feature provides detailed feedback on audio quality and speech clarity to improve your episodes.”",
+    "“Focus on actionable takeaways and practical insights that viewers can apply, rather than just guest stories.”"
+  ],
+  "hasTranscript": false,
+  "generatedAt": "2025-12-10T05:00:12.618Z",
+  "model": "perplexity-llama-3.1-sonar"
+}

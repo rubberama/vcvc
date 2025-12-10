@@ -1,0 +1,31 @@
+{
+  "videoId": "8j-cSM4qnwQ",
+  "title": "Nvidia earnings, The Private Credit bubble, Gemini 3 & The \"ARR\" lie",
+  "description": "This episode dives into Nvidia's blockbuster Q3 earnings and the AI market dynamics fueling its growth. The hosts also dissect the looming risks in Private Credit, why Google's Gemini 3 could dominate the AI race, and the misleading use of ARR metrics by startups.",
+  "keyTakeaways": [
+    "Nvidia delivered record-breaking Q3 revenue of $57 billion, driven by surging AI demand and data center growth.",
+    "The Private Credit market faces a 'subprime'-style risk due to insufficient diligence on corporate debt.",
+    "Google's Gemini 3 benefits from vertical integration across chips, cloud, and applications, positioning it to win the AI race.",
+    "Startups often manipulate ARR (Annualized Recurring Revenue) metrics, obscuring true contract quality and growth.",
+    "Sequoia Capital is experiencing leadership turnover and missed investment opportunities amid industry shifts.",
+    "VCs are struggling to keep pace with rapid technological changes and mega funds are competing with emerging managers."
+  ],
+  "topics": [
+    "Nvidia Q3 Earnings",
+    "AI Market Dynamics",
+    "Private Credit Bubble Risks",
+    "Google Gemini 3 AI",
+    "ARR Metric Manipulation",
+    "Startup Valuations",
+    "Sequoia Capital Turmoil",
+    "Venture Capital Industry Trends"
+  ],
+  "highlights": [
+    "\"Private Credit Risks: Lack of diligence is creating a 'subprime' risk in corporate debt.\"",
+    "\"Google's Advantage: Vertical integration (Chips + Cloud + Apps) gives Gemini the long-term edge.\"",
+    "\"Metric Manipulation: Investors need to look past 'ARR' and check actual contracts.\""
+  ],
+  "hasTranscript": false,
+  "generatedAt": "2025-12-10T04:12:47.194Z",
+  "model": "perplexity-llama-3.1-sonar"
+}

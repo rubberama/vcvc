@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIA VC | Not Investment Advice</title>
+    <meta name="description"
+        content="Weekly conversation with Ian, Eric, and Kevin on tech, economy, investing, market, and many more...">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">NIA<span class="logo-accent">VC</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#podcasts" class="nav-link active">Episodes</a>
+                <a href="#about" class="nav-link">About</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-trigger">
+                        Host's Fund
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="https://www.hustlefund.vc/" target="_blank" class="dropdown-item">
+                            <span class="dropdown-item-name">Hustle Fund</span>
+                            <span class="dropdown-item-desc">Pre-seed & Seed VC</span>
+                        </a>
+                        <a href="https://www.mangustacap.com/" target="_blank" class="dropdown-item">
+                            <span class="dropdown-item-name">Mangusta Capital</span>
+                            <span class="dropdown-item-desc">Venture Capital</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-actions">
+                <a href="https://www.youtube.com/@notinvestmentadviceVC?sub_confirmation=1" target="_blank"
+                    class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                    Subscribe
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>New Episode Every Week</span>
+            </div>
+            <h1 class="hero-title">
+                The intersection of <span class="gradient-text">venture capital</span> and <span
+                    class="gradient-text-alt">not investment advice</span>
+            </h1>
+            <p class="hero-subtitle">
+                Weekly conversation with Ian, Eric, and Kevin on tech, economy, investing, market, and many more... This
+                is not investment advice.
+            </p>
+            <div class="hero-cta">
+                <a href="https://www.youtube.com/@notinvestmentadviceVC" target="_blank" class="btn btn-primary btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                    Watch on YouTube
+                </a>
+                <a href="#episodes" class="btn btn-secondary btn-lg">Browse Episodes</a>
+            </div>
+            <div class="hero-stats" id="channel-stats">
+                <div class="stat">
+                    <span class="stat-number" id="video-count">--</span>
+                    <span class="stat-label">Episodes</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" id="subscriber-count">--</span>
+                    <span class="stat-label">Subscribers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" id="view-count">--</span>
+                    <span class="stat-label">Total Views</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </header>
+
+    <!-- Featured Episode (Dynamically loaded) -->
+    <section class="featured-section" id="podcasts">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FEATURED EPISODE</span>
+                <h2 class="section-title">Latest from NIA VC</h2>
+            </div>
+            <div class="featured-episode" id="featured-episode">
+                <!-- Dynamically populated by JavaScript -->
+                <div class="featured-loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading latest episode...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Grid (Dynamically loaded) -->
+    <section class="episodes-section" id="episodes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">All Episodes</h2>
+                <p class="section-subtitle">Weekly conversations on tech, economy, investing, and more</p>
+            </div>
+
+            <!-- Episode Grid -->
+            <div class="episodes-grid" id="episodes-grid">
+                <!-- Dynamically populated by JavaScript -->
+                <div class="loading-container">
+                    <div class="loading-spinner"></div>
+                    <p>Loading episodes...</p>
+                </div>
+            </div>
+
+            <div class="load-more">
+                <a href="https://www.youtube.com/@notinvestmentadviceVC/videos" target="_blank"
+                    class="btn btn-secondary btn-lg">View All on YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - The Team -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">THE TEAM</span>
+                <h2 class="section-title">Meet the Hosts</h2>
+                <p class="section-subtitle">The voices behind Not Investment Advice</p>
+            </div>
+            <div class="hosts-grid">
+                <div class="host-card">
+                    <div class="host-image">
+                        <img src="images/eric.jpg" alt="Eric" class="host-photo">
+                    </div>
+                    <h3 class="host-name">Eric</h3>
+                    <p class="host-role">Co-Host</p>
+                    <p class="host-bio">Bringing unique perspectives on tech, markets, and the future of investing to
+                        every conversation.</p>
+                </div>
+                <div class="host-card">
+                    <div class="host-image">
+                        <img src="images/ian.jpg" alt="Ian" class="host-photo">
+                    </div>
+                    <h3 class="host-name">Ian</h3>
+                    <p class="host-role">Co-Host</p>
+                    <p class="host-bio">Deep dives into economy, market trends, and the intersection of technology and
+                        finance.</p>
+                </div>
+                <div class="host-card">
+                    <div class="host-image">
+                        <img src="images/kevin.png" alt="Kevin" class="host-photo">
+                    </div>
+                    <h3 class="host-name">Kevin</h3>
+                    <p class="host-role">Co-Host</p>
+                    <p class="host-bio">Insights on venture capital, startup ecosystems, and emerging technology trends.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-text">NIA<span class="logo-accent">VC</span></span>
+                    </a>
+                    <p class="footer-tagline">Not Investment Advice. Weekly conversations about tech, economy,
+                        investing, and the market.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.youtube.com/@notinvestmentadviceVC" target="_blank" class="social-link"
+                            aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#podcasts">Latest Episode</a></li>
+                        <li><a href="#episodes">All Episodes</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.youtube.com/@notinvestmentadviceVC" target="_blank">YouTube Channel</a>
+                        </li>
+                        <li><a href="https://www.youtube.com/@notinvestmentadviceVC?sub_confirmation=1"
+                                target="_blank">Subscribe</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Not Investment Advice VC. All rights reserved.</p>
+                <p class="disclaimer">This content is for entertainment purposes only and is not investment advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="video-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="video-container">
+                <iframe id="video-iframe" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

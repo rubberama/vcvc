@@ -1,0 +1,31 @@
+{
+  "videoId": "j3dQm1Z2aYk",
+  "title": "",
+  "description": "This episode explores effective strategies for creating engaging video podcasts, emphasizing the importance of SEO-optimized descriptions, audience analysis, and performance evaluation. It also covers content enhancement techniques like pre-recording script reviews and the use of tools to improve audio quality and clarity.",
+  "keyTakeaways": [
+    "Crafting concise, keyword-rich descriptions boosts podcast visibility and attracts targeted listeners.",
+    "Pre-recording script reviews enhance message clarity, tone, and reduce recording errors.",
+    "Analyzing podcast performance with tools like Cleanvoice’s Podcast Audit provides actionable feedback on audio quality and delivery.",
+    "Incorporating hooks, teasers, and clear calls to action in descriptions engages listeners effectively.",
+    "Designing a visually appealing background and considering episode length are key for successful video podcasts.",
+    "Prioritizing viewer benefits over guest stories ensures content remains valuable and actionable."
+  ],
+  "topics": [
+    "Video podcast creation",
+    "SEO for podcast descriptions",
+    "Audience analysis",
+    "Performance evaluation tools",
+    "Content enhancement strategies",
+    "Visual design for video podcasts",
+    "Effective episode length",
+    "Engagement techniques"
+  ],
+  "highlights": [
+    "\"The first 30 seconds of your video podcast are crucial for capturing your audience's attention.\"",
+    "\"Analyzing your video podcast's performance is crucial for optimizing content and engaging effectively with your audience.\"",
+    "\"Use keywords in your episode titles, descriptions, and tags to ensure they rank higher in search results.\""
+  ],
+  "hasTranscript": false,
+  "generatedAt": "2025-12-10T05:00:37.298Z",
+  "model": "perplexity-llama-3.1-sonar"
+}
