@@ -128,8 +128,8 @@ function initTypewriter() {
 // ============================================
 async function fetchChannelStats() {
     try {
-        // Try to fetch from backend API
-        const response = await fetch('http://localhost:3001/api/channel-stats');
+        // Try to fetch from API (works on both Vercel and localhost)
+        const response = await fetch('/api/channel-stats');
 
         if (response.ok) {
             const stats = await response.json();
