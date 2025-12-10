@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initVideoModal();
     loadYouTubeContent();
+    initTypewriter();
 
     // Fetch channel stats (subscribers, views)
     fetchChannelStats();
@@ -61,6 +62,66 @@ document.addEventListener('DOMContentLoaded', () => {
     // Refresh channel stats every 1 hour (3600000 ms)
     setInterval(fetchChannelStats, 60 * 60 * 1000);
 });
+
+// ============================================
+// Typewriter Effect for Hero Section
+// ============================================
+function initTypewriter() {
+    const words = ['venture capital', 'tech', 'economy', 'investing'];
+    const typewriterEl = document.getElementById('typewriter-text');
+
+    if (!typewriterEl) return;
+
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let isPaused = false;
+
+    const typeSpeed = 80;      // Speed of typing
+    const deleteSpeed = 50;    // Speed of deleting
+    const pauseDuration = 2000; // How long to pause after typing
+    const pauseBeforeType = 500; // Pause before typing next word
+
+    function type() {
+        const currentWord = words[wordIndex];
+
+        if (isPaused) {
+            setTimeout(type, pauseBeforeType);
+            isPaused = false;
+            return;
+        }
+
+        if (isDeleting) {
+            // Deleting characters
+            typewriterEl.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+
+            if (charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                isPaused = true;
+            }
+
+            setTimeout(type, deleteSpeed);
+        } else {
+            // Typing characters
+            typewriterEl.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+
+            if (charIndex === currentWord.length) {
+                // Finished typing, pause then start deleting
+                isDeleting = true;
+                setTimeout(type, pauseDuration);
+                return;
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+    }
+
+    // Start the typewriter effect
+    type();
+}
 
 // ============================================
 // Fetch Channel Stats (Subscribers, Views)

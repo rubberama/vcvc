@@ -420,6 +420,35 @@ input {
     background-clip: text;
 }
 
+/* Typewriter Effect Styles */
+.typewriter-container {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.typewriter-cursor {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: blink 1s step-end infinite;
+    font-weight: 300;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
 .gradient-text-alt {
     background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
     -webkit-background-clip: text;

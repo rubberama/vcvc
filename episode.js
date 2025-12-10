@@ -95,7 +95,7 @@ function renderEpisode(episode) {
 
     // Update video player
     document.getElementById('youtube-player').src =
-        `https://www.youtube-nocookie.com/embed/${episode.videoId}?rel=0&modestbranding=1`;
+        `https://www.youtube.com/embed/${episode.videoId}?rel=0&modestbranding=1`;
 
     // Render description with typewriter effect
     const descriptionEl = document.getElementById('episode-description');
@@ -235,7 +235,7 @@ function seekToTime(seconds) {
     if (!videoId) return;
 
     // Rebuild the embed URL with start time - this is the proper way
-    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?start=${seconds}&autoplay=1&rel=0&modestbranding=1`;
+    iframe.src = `https://www.youtube.com/embed/${videoId}?start=${seconds}&autoplay=1&rel=0&modestbranding=1`;
 
     // Scroll to video
     iframe.scrollIntoView({ behavior: 'smooth', block: 'center' });
