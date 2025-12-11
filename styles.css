@@ -86,7 +86,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* Dark Theme Colors */
-        --color-bg: #0f0f1a;
+        --color-bg: #000000;
         --color-bg-alt: #1a1a2e;
         --color-bg-card: #1e1e32;
         --color-surface: #252540;
@@ -666,7 +666,7 @@ input {
    ============================================ */
 .featured-section {
     padding: var(--spacing-4xl) 0;
-    background: #0f0f1a;
+    background: #000000;
 }
 
 .featured-episode {
@@ -775,7 +775,7 @@ input {
    ============================================ */
 .episodes-section {
     padding: var(--spacing-4xl) 0;
-    background: #0f0f1a;
+    background: #000000;
 }
 
 .category-filters {
@@ -1099,7 +1099,7 @@ input {
    ============================================ */
 .about-section {
     padding: var(--spacing-4xl) 0;
-    background: #0f0f1a;
+    background: #000000;
 }
 
 .hosts-grid {
