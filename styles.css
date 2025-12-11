@@ -394,6 +394,14 @@ input {
     flex-direction: column;
 }
 
+.dropdown-logo-img {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-md);
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
 .dropdown-item:hover {
     background: rgba(124, 58, 237, 0.2);
 }
