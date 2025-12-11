@@ -517,6 +517,11 @@ input {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.3),
+        0 4px 8px rgba(0, 0, 0, 0.2),
+        0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .gradient-text {
@@ -524,6 +529,7 @@ input {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 2px 4px rgba(124, 58, 237, 0.4)) drop-shadow(0 4px 8px rgba(124, 58, 237, 0.2));
 }
 
 /* Typewriter Effect Styles */
@@ -560,6 +566,7 @@ input {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 2px 4px rgba(20, 184, 166, 0.4)) drop-shadow(0 4px 8px rgba(20, 184, 166, 0.2));
 }
 
 .hero-subtitle {
