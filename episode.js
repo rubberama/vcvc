@@ -100,18 +100,7 @@ function renderEpisode(episode) {
     // Render description with typewriter effect
     const descriptionEl = document.getElementById('episode-description');
     if (episode.aiGenerated) {
-        typewriterEffect(descriptionEl, episode.description, 7, () => {
-            // Add AI badge after typewriter completes
-            const badge = document.createElement('span');
-            badge.className = 'ai-badge';
-            badge.innerHTML = `
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                </svg>
-                AI Generated
-            `;
-            descriptionEl.appendChild(badge);
-        });
+        typewriterEffect(descriptionEl, episode.description, 7);
     } else {
         descriptionEl.textContent = episode.description;
     }
@@ -335,7 +324,7 @@ function renderRelatedEpisodes(currentVideoId) {
     container.innerHTML = episodes.map(episode => `
         <article class="episode-card" onclick="window.location.href='episode.html?v=${episode.videoId}'">
             <div class="card-image">
-                <img src="https://i.ytimg.com/vi/${episode.videoId}/maxresdefault.jpg" alt="${escapeHtml(episode.title)}" class="card-thumbnail">
+                <img src="https://i.ytimg.com/vi/${episode.videoId}/hqdefault.jpg" alt="${escapeHtml(episode.title)}" class="card-thumbnail" onerror="this.src='https://i.ytimg.com/vi/${episode.videoId}/mqdefault.jpg'">
                 <div class="card-overlay">
                     <button class="play-btn-sm">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

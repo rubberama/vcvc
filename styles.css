@@ -262,7 +262,46 @@ input {
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
+}
+
+/* Navigation Social Buttons */
+.nav-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    color: white;
+    transition: all var(--transition-fast);
+}
+
+.nav-social-btn.youtube {
+    background: #FF0000;
+}
+
+.nav-social-btn.youtube:hover {
+    background: #CC0000;
+    transform: scale(1.1);
+}
+
+.nav-social-btn.spotify {
+    background: #1DB954;
+}
+
+.nav-social-btn.spotify:hover {
+    background: #1AA34A;
+    transform: scale(1.1);
+}
+
+.nav-social-btn.apple {
+    background: linear-gradient(180deg, #FA57C1 0%, #B465DA 50%, #8567E6 100%);
+}
+
+.nav-social-btn.apple:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
 }
 
 .mobile-menu-btn {
@@ -1045,12 +1084,12 @@ input {
 }
 
 .host-card {
-    background: white;
+    background: #1e1e32;
     border-radius: var(--radius-xl);
     padding: var(--spacing-xl);
     text-align: center;
     box-shadow: var(--shadow-md);
-    border: 1px solid var(--color-border-light);
+    border: 1px solid rgba(124, 58, 237, 0.2);
     transition: all var(--transition-base);
 }
 
@@ -1083,7 +1122,7 @@ input {
 .host-name {
     font-size: var(--font-size-xl);
     font-weight: 700;
-    color: var(--color-text);
+    color: white;
     margin-bottom: var(--spacing-xs);
 }
 
@@ -1096,7 +1135,7 @@ input {
 
 .host-bio {
     font-size: var(--font-size-sm);
-    color: var(--color-text-secondary);
+    color: rgba(255, 255, 255, 0.7);
     line-height: 1.6;
     margin-bottom: var(--spacing-lg);
 }
