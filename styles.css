@@ -460,7 +460,7 @@ input {
 .hero {
     position: relative;
     padding: calc(72px + var(--spacing-4xl)) 0 var(--spacing-4xl);
-    background: #000000;
+    background: linear-gradient(180deg, #1a0a2e 0%, #0d0515 50%, #000000 100%);
     overflow: hidden;
 }
 
@@ -666,7 +666,7 @@ input {
    ============================================ */
 .featured-section {
     padding: var(--spacing-4xl) 0;
-    background: #000000;
+    background: linear-gradient(180deg, #000000 0%, #050208 100%);
 }
 
 .featured-episode {
