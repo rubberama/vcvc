@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Not Investment Advice VC Podcast</title>
+    <title>About Us | Not Investment Advice VC Podcast</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta name="description" content="Meet the hosts of Not Investment Advice - Eric Bahn, Ian Park, and Kevin Jiang">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-hero {
+            position: relative;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(15, 15, 26, 0.95) 100%),
+                url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+            padding-top: calc(72px + var(--spacing-3xl));
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-title {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            color: white;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .about-subtitle {
+            font-size: var(--font-size-xl);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--spacing-xl);
+            font-style: italic;
+        }
+
+        .about-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: var(--font-size-base);
+            line-height: 1.8;
+        }
+
+        .about-text p {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .about-text ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .about-text li {
+            padding-left: var(--spacing-lg);
+            position: relative;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .about-text li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-primary);
+        }
+
+        .about-text strong {
+            color: white;
+        }
+
+        .hosts-section-title {
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            color: white;
+            margin-bottom: var(--spacing-xl);
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +95,7 @@
             </a>
             <div class="nav-links">
                 <a href="index.html#podcasts" class="nav-link">Episodes</a>
-                <a href="about.html" class="nav-link active">About</a>
+                <a href="about.html" class="nav-link active">About Us</a>
                 <div class="nav-dropdown">
                     <a href="#" class="nav-link nav-dropdown-trigger">
                         Host's Fund
@@ -34,14 +105,10 @@
                         </svg>
                     </a>
                     <div class="nav-dropdown-menu">
-                        <a href="https://www.hustlefund.vc/" target="_blank" class="dropdown-item">
-                            <span class="dropdown-item-name">Hustle Fund</span>
-                            <span class="dropdown-item-desc">Pre-seed & Seed VC</span>
-                        </a>
-                        <a href="https://www.mangustacap.com/" target="_blank" class="dropdown-item">
-                            <span class="dropdown-item-name">Mangusta Capital</span>
-                            <span class="dropdown-item-desc">Venture Capital</span>
-                        </a>
+                        <a href="https://www.hustlefund.vc/" target="_blank" class="dropdown-item-simple">Hustle
+                            Fund</a>
+                        <a href="https://www.mangustacap.com/" target="_blank" class="dropdown-item-simple">Mangusta
+                            Capital</a>
                     </div>
                 </div>
             </div>
@@ -76,13 +143,38 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero" style="padding-top: calc(72px + var(--spacing-3xl)); min-height: auto;">
+    <!-- About Hero Section with SF Background -->
+    <header class="about-hero">
         <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag">THE TEAM</span>
-                <h1 class="section-title" style="font-size: var(--font-size-4xl);">Meet the Hosts</h1>
-                <p class="section-subtitle">The voices behind Not Investment Advice</p>
+            <div class="about-content">
+                <h1 class="about-title">We accidentally started a podcast.</h1>
+                <p class="about-subtitle">What began as friends venting on WhatsApp about AI, markets, and being Asian
+                    in VC… has quietly turned into one of the highlights of our week.</p>
+
+                <div class="about-text">
+                    <p>It's called <strong>"Not Investment Advice"</strong> (because, truly, it isn't 😅).</p>
+
+                    <p>At its core, it's just:</p>
+                    <ul>
+                        <li>Three emerging managers of Asian descent</li>
+                        <li>Sitting between Silicon Valley and Asia</li>
+                        <li>Talking honestly about what we're seeing in tech, capital, and culture</li>
+                        <li>With the occasional identity crisis mixed in</li>
+                    </ul>
+
+                    <p>When we first hit "record," there was no grand mission deck. Just three Asian GPs who grew up
+                        being told not to "shine too brightly," rarely saw people who look like us on big VC media
+                        platforms, and wanted a space to speak candidly about the markets and about identity, without
+                        over-polishing it.</p>
+
+                    <p>The vibe is somewhere between <strong>Asian All-In</strong> and "late-night group chat you
+                        weren't supposed to see":</p>
+                    <ul>
+                        <li>No heavy editing</li>
+                        <li>We disagree with each other a lot</li>
+                        <li>We talk about things that are exciting and a little scary</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -90,6 +182,7 @@
     <!-- Hosts Section -->
     <section class="about-section">
         <div class="container">
+            <h2 class="hosts-section-title">The Crew</h2>
             <div class="hosts-grid">
                 <div class="host-card">
                     <div class="host-image">
@@ -97,9 +190,9 @@
                     </div>
                     <h3 class="host-name">Eric Bahn</h3>
                     <p class="host-role">Co-Founder @ Hustle Fund</p>
-                    <p class="host-bio">Co-Founder and General Partner at Hustle Fund, a pre-seed VC firm backing
-                        exceptional founders. Previously built and sold a startup, and has been named one of the most
-                        connected people in Silicon Valley.</p>
+                    <p class="host-bio">Co-founder of Hustle Fund, early ex-Instagram, serial founder, and one of the
+                        best community builders in VC. He's spent years backing pre-seed founders and teaching thousands
+                        of people how venture really works.</p>
                     <div class="host-socials">
                         <a href="https://www.linkedin.com/in/ericbahn/" target="_blank" class="social-link"
                             aria-label="LinkedIn">
@@ -126,9 +219,9 @@
                     </div>
                     <h3 class="host-name">Ian Park</h3>
                     <p class="host-role">Investor & Advisor</p>
-                    <p class="host-bio">Experienced investor with deep expertise in fintech, marketplace dynamics, and
-                        emerging tech trends. Passionate about helping founders navigate the evolving landscape of
-                        venture capital and technology.</p>
+                    <p class="host-bio">Former partner at a Korean-American VC fund in the Valley and ex-investor at KIC
+                        (Korea's sovereign wealth fund). He writes a widely respected Korean-language newsletter and
+                        podcast, bridging LPs, VCs, and founders across Korea and the US.</p>
                     <div class="host-socials">
                         <a href="https://www.linkedin.com/in/park-ian/" target="_blank" class="social-link"
                             aria-label="LinkedIn">
@@ -144,10 +237,11 @@
                         <img src="images/kevin.png" alt="Kevin Jiang" class="host-photo">
                     </div>
                     <h3 class="host-name">Kevin Jiang</h3>
-                    <p class="host-role">Founding Partner @ Mangusta Capital</p>
-                    <p class="host-bio">Founding Partner at Mangusta Capital, investing in early-stage consumer and
-                        enterprise startups. Previously in investing for 7+ years with a focus on AI, fintech, and
-                        emerging technologies.</p>
+                    <p class="host-role">Managing Partner @ Mangusta Capital</p>
+                    <p class="host-bio">Managing Partner at Mangusta Capital, a VC backed by the Luxottica family
+                        office. Previously at SoftBank Investment Advisers, Apollo Global Management, and Goldman Sachs.
+                        Now focused on AI-native, vertical application companies out of San Francisco, Milan, and Seoul.
+                    </p>
                     <div class="host-socials">
                         <a href="https://www.linkedin.com/in/jiangkevin/" target="_blank" class="social-link"
                             aria-label="LinkedIn">
