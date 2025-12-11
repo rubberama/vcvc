@@ -239,25 +239,23 @@ input {
 .nav-link {
     font-size: var(--font-size-sm);
     font-weight: 500;
-    color: var(--color-text-secondary);
-    transition: color var(--transition-fast);
+    color: rgba(255, 255, 255, 0.7);
+    transition: all var(--transition-fast);
     position: relative;
+    padding: 8px 16px;
+    border-radius: 20px;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .nav-link.active {
-    color: var(--color-text);
-}
-
-.nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-    border-radius: var(--radius-full);
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .nav-actions {
