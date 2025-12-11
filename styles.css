@@ -275,32 +275,11 @@ input {
     border-radius: var(--radius-full);
     color: white;
     transition: all var(--transition-fast);
+    opacity: 0.7;
 }
 
-.nav-social-btn.youtube {
-    background: #FF0000;
-}
-
-.nav-social-btn.youtube:hover {
-    background: #CC0000;
-    transform: scale(1.1);
-}
-
-.nav-social-btn.spotify {
-    background: #1DB954;
-}
-
-.nav-social-btn.spotify:hover {
-    background: #1AA34A;
-    transform: scale(1.1);
-}
-
-.nav-social-btn.apple {
-    background: linear-gradient(180deg, #FA57C1 0%, #B465DA 50%, #8567E6 100%);
-}
-
-.nav-social-btn.apple:hover {
-    opacity: 0.9;
+.nav-social-btn:hover {
+    opacity: 1;
     transform: scale(1.1);
 }
 
