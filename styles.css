@@ -219,7 +219,7 @@ input {
 .logo-line-small {
     font-size: var(--font-size-xs);
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(167, 139, 250, 0.9);
 }
 
 .logo-accent {
