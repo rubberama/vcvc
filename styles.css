@@ -622,7 +622,7 @@ input {
     width: 100%;
     max-width: 1200px;
     height: 600px;
-    background: radial-gradient(ellipse at center top, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+    background: transparent;
     pointer-events: none;
 }
 
