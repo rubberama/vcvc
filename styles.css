@@ -523,7 +523,10 @@ input {
 }
 
 .gradient-text {
-    color: white;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* Typewriter Effect Styles */
@@ -533,7 +536,10 @@ input {
 }
 
 .typewriter-cursor {
-    color: white;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     animation: blink 1s step-end infinite;
     font-weight: 300;
     margin-left: 2px;
@@ -553,7 +559,10 @@ input {
 }
 
 .gradient-text-alt {
-    color: white;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .hero-subtitle {
