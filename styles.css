@@ -529,7 +529,7 @@ input {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 2px 4px rgba(124, 58, 237, 0.4)) drop-shadow(0 4px 8px rgba(124, 58, 237, 0.2));
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 /* Typewriter Effect Styles */
@@ -566,7 +566,7 @@ input {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 2px 4px rgba(20, 184, 166, 0.4)) drop-shadow(0 4px 8px rgba(20, 184, 166, 0.2));
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 .hero-subtitle {
