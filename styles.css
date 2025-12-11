@@ -78,7 +78,7 @@
     --transition-slow: 300ms ease;
 
     /* Container */
-    --container-max: 1280px;
+    --container-max: 1600px;
     --container-padding: 1.5rem;
 }
 
@@ -641,7 +641,7 @@ input {
    ============================================ */
 .featured-section {
     padding: var(--spacing-4xl) 0;
-    background: var(--color-bg);
+    background: #0f0f1a;
 }
 
 .featured-episode {
@@ -750,7 +750,7 @@ input {
    ============================================ */
 .episodes-section {
     padding: var(--spacing-4xl) 0;
-    background: var(--color-bg-alt);
+    background: #0f0f1a;
 }
 
 .category-filters {
@@ -1074,7 +1074,7 @@ input {
    ============================================ */
 .about-section {
     padding: var(--spacing-4xl) 0;
-    background: var(--color-bg-alt);
+    background: #0f0f1a;
 }
 
 .hosts-grid {
