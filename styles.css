@@ -460,7 +460,7 @@ input {
 .hero {
     position: relative;
     padding: calc(72px + var(--spacing-4xl)) 0 var(--spacing-4xl);
-    background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+    background: #000000;
     overflow: hidden;
 }
 
