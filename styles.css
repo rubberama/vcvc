@@ -1391,14 +1391,10 @@ input {
 
     .nav-actions.show {
         display: flex;
-        position: absolute;
-        top: calc(100% + 200px);
-        left: 0;
-        right: 0;
-        background: #1e1e32;
-        padding: var(--spacing-lg);
-        justify-content: center;
-        border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+        gap: var(--spacing-md);
+        padding: var(--spacing-md) 0;
+        margin-top: var(--spacing-md);
+        border-top: 1px solid rgba(124, 58, 237, 0.2);
     }
 
     .mobile-menu-btn.active span:nth-child(1) {

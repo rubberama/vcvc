@@ -427,9 +427,17 @@ function initNavigation() {
     // Mobile menu
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
-            navActions.classList.toggle('show');
+            const isOpen = navLinks.classList.toggle('show');
             mobileMenuBtn.classList.toggle('active');
+
+            // Move social buttons into/out of nav menu on mobile
+            if (isOpen && navActions) {
+                navLinks.appendChild(navActions);
+                navActions.classList.add('show');
+            } else if (navActions) {
+                navActions.classList.remove('show');
+                document.querySelector('.nav-container').appendChild(navActions);
+            }
         });
     }
 
