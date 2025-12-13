@@ -5,7 +5,7 @@
 /* Episode Header */
 .episode-header {
     padding: calc(72px + var(--spacing-2xl)) 0 var(--spacing-2xl);
-    background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+    background: linear-gradient(180deg, #1a0a2e 0%, #0d0515 50%, #000000 100%);
 }
 
 .back-link {
@@ -14,13 +14,13 @@
     gap: var(--spacing-sm);
     font-size: var(--font-size-sm);
     font-weight: 500;
-    color: var(--color-text-secondary);
+    color: rgba(255, 255, 255, 0.6);
     margin-bottom: var(--spacing-xl);
     transition: color var(--transition-fast);
 }
 
 .back-link:hover {
-    color: var(--color-primary);
+    color: var(--color-primary-light);
 }
 
 .episode-header-content {
@@ -50,23 +50,23 @@
     font-weight: 800;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: var(--color-text);
+    color: white;
     margin-bottom: var(--spacing-md);
 }
 
 .episode-hosts {
     font-size: var(--font-size-base);
-    color: var(--color-text-secondary);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .episode-hosts strong {
-    color: var(--color-text);
+    color: white;
 }
 
 /* Episode Main Layout */
 .episode-main {
     padding: var(--spacing-3xl) 0;
-    background: var(--color-bg);
+    background: #000000;
 }
 
 .episode-layout {
@@ -107,29 +107,29 @@
 .episode-description-section h2 {
     font-size: var(--font-size-xl);
     font-weight: 700;
-    color: var(--color-text);
+    color: white;
     margin-bottom: var(--spacing-md);
 }
 
 .episode-description {
     font-size: var(--font-size-base);
     line-height: 1.8;
-    color: var(--color-text-secondary);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* Topics Section */
 .topics-section {
-    background: var(--color-bg-alt);
+    background: #1e1e32;
     border-radius: var(--radius-xl);
     padding: var(--spacing-xl);
     margin-bottom: var(--spacing-2xl);
-    border: 1px solid var(--color-border-light);
+    border: 1px solid rgba(124, 58, 237, 0.2);
 }
 
 .topics-section h3 {
     font-size: var(--font-size-lg);
     font-weight: 700;
-    color: var(--color-text);
+    color: white;
     margin-bottom: var(--spacing-lg);
 }
 
@@ -143,7 +143,7 @@
     position: relative;
     padding-left: var(--spacing-lg);
     font-size: var(--font-size-base);
-    color: var(--color-text-secondary);
+    color: rgba(255, 255, 255, 0.7);
     line-height: 1.6;
 }
 
@@ -161,13 +161,13 @@
 /* Share Section */
 .share-section {
     padding-top: var(--spacing-xl);
-    border-top: 1px solid var(--color-border-light);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .share-section h4 {
     font-size: var(--font-size-sm);
     font-weight: 600;
-    color: var(--color-text-muted);
+    color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: var(--spacing-md);
@@ -186,17 +186,17 @@
     padding: 0.5rem 1rem;
     font-size: var(--font-size-sm);
     font-weight: 500;
-    color: var(--color-text-secondary);
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: var(--radius-lg);
     cursor: pointer;
     transition: all var(--transition-fast);
 }
 
 .share-btn:hover {
-    background: var(--color-border);
-    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 .share-btn.copied {
@@ -215,17 +215,17 @@
 }
 
 .sidebar-card {
-    background: var(--color-bg-card);
+    background: #1e1e32;
     border-radius: var(--radius-xl);
     padding: var(--spacing-lg);
-    border: 1px solid var(--color-border-light);
+    border: 1px solid rgba(124, 58, 237, 0.2);
     box-shadow: var(--shadow-md);
 }
 
 .sidebar-card h4 {
     font-size: var(--font-size-base);
     font-weight: 700;
-    color: var(--color-text);
+    color: white;
     margin-bottom: var(--spacing-md);
 }
 
@@ -285,7 +285,7 @@
 /* Subscribe Card */
 .subscribe-card p {
     font-size: var(--font-size-sm);
-    color: var(--color-text-secondary);
+    color: rgba(255, 255, 255, 0.7);
     margin-bottom: var(--spacing-md);
     line-height: 1.5;
 }
@@ -298,7 +298,7 @@
 /* Related Section */
 .related-section {
     padding: var(--spacing-4xl) 0;
-    background: var(--color-bg-alt);
+    background: linear-gradient(180deg, #000000 0%, #050208 100%);
 }
 
 .related-grid {
