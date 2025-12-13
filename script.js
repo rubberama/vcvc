@@ -9,7 +9,7 @@ const YOUTUBE_CONFIG = {
     channelId: 'UCkrNV__eDuSmX2Y5GYU5ulQ',
     // YouTube API Key - You'll need to replace this with your own API key
     // Get one at: https://console.developers.google.com/
-    apiKey: 'YOUR_YOUTUBE_API_KEY',
+    apiKey: 'AIzaSyCiPfkcZBbHfV8XHpVpza8hh-naxoO-wm8',
     // Number of videos to fetch
     maxResults: 12,
     // Channel handle for RSS feed fallback
